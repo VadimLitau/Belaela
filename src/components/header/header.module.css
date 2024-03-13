@@ -1,8 +1,39 @@
 .wrap {
-  border: 1px solid red;
   width: 1600px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.contactsWrap {
+  width: 180px;
+  height: 66px;
+  border-radius: 33px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.contactsCircle {
+  width: 56px;
+  height: 56px;
+  background-color: var(--font-main-color);
+  border-radius: 28px;
+  margin-left: 12px;
+}
+
+.contactsText {
+  color: var(--font-main-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.searchWrap {
+  display: flex;
+  flex-direction: row;
 }
