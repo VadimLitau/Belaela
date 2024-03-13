@@ -1,0 +1,22 @@
+.wrap {
+  width: 376px;
+  height: 66px;
+  border: 1px solid green;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.inputSeacrh {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+
+.inputSeacrh:focus {
+  border: transparent;
+  outline: transparent;
+}

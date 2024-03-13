@@ -1,0 +1,8 @@
+.wrap {
+  border: 1px solid red;
+  width: 1600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

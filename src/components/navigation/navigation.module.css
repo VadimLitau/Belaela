@@ -1,0 +1,12 @@
+.listItem {
+  display: inline;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--font-main-color);
+  padding-right: 20px;
+}
+
+.listItemUppercase {
+  text-transform: uppercase;
+}
