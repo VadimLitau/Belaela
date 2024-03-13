@@ -1,4 +1,11 @@
 :root {
   --font-main-color: #274c5b;
+  --color-green: #7eb693;
+  --color-yellow: #274c5b;
+  --color-gray: #d4d4d4;
+  --color-opacity-grey: #f9f8f8;
+  --color-opacity-green: #eff6f1;
+  --color-dark-gray: #525c60;
+
   --font-family: "Roboto", sans-serif;
 }

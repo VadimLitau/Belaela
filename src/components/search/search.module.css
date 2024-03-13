@@ -1,12 +1,11 @@
 .wrap {
   width: 376px;
   height: 66px;
-  border: 1px solid green;
   border-radius: 36px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #fafafa;
+  background-color: #e0dede;
 }
 
 .inputSeacrh {
@@ -19,4 +18,13 @@
 .inputSeacrh:focus {
   border: transparent;
   outline: transparent;
+}
+
+.btn {
+  width: 56px;
+  height: 56px;
+  border: none;
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
 }

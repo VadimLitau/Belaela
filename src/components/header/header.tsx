@@ -5,10 +5,18 @@ import styles from "./header.module.css";
 
 export function Header() {
   return (
-    <div className={styles.wrap}>
-      <img src="../../public/belaelaLogo.svg" alt="Belaela логотип" />
+    <section className={styles.wrap}>
+      <img src="/public/belaelaLogo.svg" alt="Belaela логотип" />
       <Navigation navData={navigationData} />
-      <Seacrh />
-    </div>
+      <div className={styles.searchWrap}>
+        <Seacrh />
+        <div className={styles.contactsWrap}>
+          <div className={styles.contactsCircle} />
+          <a href="#" className={styles.contactsText}>
+            Контакты
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }

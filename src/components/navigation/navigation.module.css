@@ -10,3 +10,7 @@
 .listItemUppercase {
   text-transform: uppercase;
 }
+
+.listItemLink {
+  text-decoration: none;
+}
