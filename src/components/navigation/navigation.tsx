@@ -22,7 +22,9 @@ export const Navigation: React.FC<INavigationData> = ({
                 item.uppercase ? styles.listItemUppercase : ""
               }`}
             >
-              {item.list}
+              <a href="#" className={styles.listItemLink}>
+                {item.list}
+              </a>
             </li>
           );
         })}

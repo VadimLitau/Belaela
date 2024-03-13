@@ -1,6 +1,7 @@
 @import "./styles/reset";
 @import "./styles/variables/global.css";
 
-body {
+* {
   font-family: var(--font-family);
+  color: var(--font-main-color);
 }
