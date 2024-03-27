@@ -1,0 +1,25 @@
+.main {
+  background-image: url("../../img/BannerBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 898px;
+}
+
+.text {
+  margin: 239px 0 0 260px;
+  width: 541px;
+}
+.natural {
+  font-family: var(--font-familyRosaMarena);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 34px;
+  letter-spacing: 3%;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 73px;
+}
