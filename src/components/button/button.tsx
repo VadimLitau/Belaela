@@ -6,9 +6,10 @@ interface IButton {
   text: string;
   arrow?: boolean;
   styles: IButtonStyles;
+  action: () => void;
 }
 
-export function Button({ text, arrow, styles }: IButton) {
+export function Button({ text, arrow, styles, action }: IButton) {
   return (
     <button
       className={style.btn}
@@ -19,6 +20,7 @@ export function Button({ text, arrow, styles }: IButton) {
         backgroundColor: `${styles.background_color}`,
         marginTop: `${styles.margin_top}`,
       }}
+      onClick={action}
     >
       <span>{text}</span>
       {arrow ? (
