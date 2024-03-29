@@ -2,11 +2,12 @@ import { navigationData } from "../../data/data";
 import { Navigation } from "../navigation/navigation";
 import { Seacrh } from "../search/search";
 import styles from "./header.module.css";
+import belaelaLogo from "../../img/BelaelaLogo.svg";
 
 export function Header() {
   return (
     <section className={styles.wrap}>
-      <img src="/public/belaelaLogo.svg" alt="Belaela логотип" />
+      <img src={belaelaLogo} alt="Belaela логотип" />
       <Navigation navData={navigationData} />
       <div className={styles.searchWrap}>
         <Seacrh />
