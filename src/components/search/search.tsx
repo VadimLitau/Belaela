@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import styles from "./search.module.css";
 import useForm from "../../hooks/useForm";
+import searchBtn from "../../img/SearchBtn.svg";
 
 export const Seacrh = () => {
   const [values, setValues] = useForm();
@@ -22,7 +23,7 @@ export const Seacrh = () => {
             console.log("button pressed");
           }}
         >
-          <img src="/public/searchBtn.svg" alt="Кнопка поиска" />
+          <img src={searchBtn} alt="Кнопка поиска" />
         </button>
       </div>
     </label>
