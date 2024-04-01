@@ -8,6 +8,7 @@ export function Banner() {
     border: "none",
     background_color: "#EFD372",
     margin_top: "23px",
+    font_family: "Roboto, sans-serif",
   };
   const handleClick = () => {
     console.log("kurwa!");
