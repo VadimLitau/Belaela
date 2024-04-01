@@ -2,6 +2,8 @@ import offerBanner1 from "../img/offerBanner1.png";
 import offerBanner2 from "../img//offerBanner2.jpg";
 import listIcon1 from "../img/listIcon1.svg";
 import listIcon2 from "../img/listIcon2.svg";
+import product1 from "../img/products1.png";
+import product2 from "../img/products2.png";
 
 const navigationData = [
   { list: "О нас" },
@@ -53,4 +55,47 @@ const aboutData = [
     text: "На каждом этапе производства мы стремимся к совершенству,  чтобы вы могли наслаждаться продуктами с превосходным качеством и вкусом.",
   },
 ];
-export { navigationData, offerBannersData, aboutData };
+
+const productData = [
+  {
+    type: "Масла",
+    photo: `${product1}`,
+    name: "Масло тыквенное, 250мл",
+  },
+  {
+    type: "Мука",
+    photo: `${product1}`,
+    name: "Масло кунжутное, 250мл ",
+  },
+  {
+    type: "Каши",
+    photo: `${product1}`,
+    name: "Масло грецкого ореха, 250 мл",
+  },
+  {
+    type: "Масла",
+    photo: `${product1}`,
+    name: "Масло Конопляное, 250мл ",
+  },
+  {
+    type: "Масла",
+    photo: `${product2}`,
+    name: "Масло тыквенное, 250мл",
+  },
+  {
+    type: "Мука",
+    photo: `${product2}`,
+    name: "Масло кунжутное, 250мл ",
+  },
+  {
+    type: "Каши",
+    photo: `${product2}`,
+    name: "Масло грецкого ореха, 250 мл",
+  },
+  {
+    type: "Масла",
+    photo: `${product2}`,
+    name: "Масло Конопляное, 250мл ",
+  },
+];
+export { navigationData, offerBannersData, aboutData, productData };
