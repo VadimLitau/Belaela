@@ -4,4 +4,8 @@ export interface IButtonStyles {
   border?: string;
   background_color?: string;
   margin_top?: string;
+  text_color?: string;
+  font_size?: string;
+  font_weight?: number;
+  font_family?: string;
 }

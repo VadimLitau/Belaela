@@ -22,7 +22,16 @@ export function Button({ text, arrow, styles, action }: IButton) {
       }}
       onClick={action}
     >
-      <span>{text}</span>
+      <span
+        style={{
+          color: `${styles.text_color}`,
+          fontFamily: `${styles.font_family}`,
+          fontWeight: `${styles.font_weight}`,
+          fontSize: `${styles.font_size}`,
+        }}
+      >
+        {text}
+      </span>
       {arrow ? (
         <div className={style.arrowWrap}>
           <img src={arrowRight} alt="arrow" />
