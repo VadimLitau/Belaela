@@ -1,0 +1,51 @@
+.whoWeAreWrap {
+  background-image: url("../../img/whoWeAreBgi.png");
+  width: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.whoWeAre {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  padding: 80px;
+  width: 780px;
+  margin: 100px 280px 108px 0;
+}
+.whoWeAreTitle {
+  font-family: var(--font-familyRosaMarena);
+  color: var(--color-green);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 51px;
+  letter-spacing: 9%;
+  margin-bottom: 8px;
+}
+.whoWeAreText {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 35px;
+}
+.whoWeAreList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 635px;
+}
+.whoWeAreListItem {
+  margin-bottom: 35px;
+}
+.whoWeAreListItemTitle {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 7px;
+}
+.whoWeAreListItemText {
+  font-family: var(--font-familyOpenSans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}

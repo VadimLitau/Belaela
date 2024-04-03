@@ -139,6 +139,20 @@ const offersData = [
     name: "Масло Конопляное, 250мл ",
   },
 ];
+const whoWeAreData = [
+  {
+    title: "Современное сельское хозяйство",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
+  },
+  {
+    title: "Технологичный подход в производстве",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
+  },
+  {
+    title: "Популяризация натуральных продуктов",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
+  },
+];
 export {
   navigationData,
   offerBannersData,
@@ -146,4 +160,5 @@ export {
   productData,
   reviewsData,
   offersData,
+  whoWeAreData,
 };
