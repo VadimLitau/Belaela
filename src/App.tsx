@@ -5,6 +5,7 @@ import { OfferBanners } from "./components/offerBanners/offerBanners";
 import { offerBannersData } from "./data/data";
 import { About } from "./components/about/about";
 import { Products } from "./components/products/products";
+import { Reviews } from "./components/reviews/reviews";
 function App() {
   return (
     <div className={styles.wrap}>
@@ -13,6 +14,7 @@ function App() {
       <OfferBanners props={offerBannersData} />
       <About />
       <Products />
+      <Reviews />
     </div>
   );
 }

@@ -98,4 +98,29 @@ const productData = [
     name: "Масло Конопляное, 250мл ",
   },
 ];
-export { navigationData, offerBannersData, aboutData, productData };
+
+const reviewsData = [
+  {
+    title: "100%",
+    text: "Органически",
+  },
+  {
+    title: "15",
+    text: `Продуктов на рынке`,
+  },
+  {
+    title: "150+",
+    text: "Торгорвых точек",
+  },
+  {
+    title: "5+",
+    text: "Лет на рынке",
+  },
+];
+export {
+  navigationData,
+  offerBannersData,
+  aboutData,
+  productData,
+  reviewsData,
+};
