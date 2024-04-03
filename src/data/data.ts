@@ -117,10 +117,33 @@ const reviewsData = [
     text: "Лет на рынке",
   },
 ];
+const offersData = [
+  {
+    type: "Масла",
+    photo: `${product1}`,
+    name: "Масло тыквенное, 250мл",
+  },
+  {
+    type: "Мука",
+    photo: `${product1}`,
+    name: "Масло кунжутное, 250мл ",
+  },
+  {
+    type: "Каши",
+    photo: `${product1}`,
+    name: "Масло грецкого ореха, 250 мл",
+  },
+  {
+    type: "Масла",
+    photo: `${product1}`,
+    name: "Масло Конопляное, 250мл ",
+  },
+];
 export {
   navigationData,
   offerBannersData,
   aboutData,
   productData,
   reviewsData,
+  offersData,
 };

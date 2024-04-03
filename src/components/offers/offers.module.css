@@ -1,0 +1,67 @@
+.offersWrap {
+  background-color: var(--color-green);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.offers {
+  width: 1400px;
+  padding: 200px 0;
+}
+.offersTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.offersTitleBtn {
+  margin-right: 18px;
+}
+.offersTitleText {
+  color: var(--color-white);
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 59px;
+}
+.offersList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.offersListItem {
+  width: 335px;
+  height: 483px;
+  background-color: var(--color-opacity-grey);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-bottom: 21px;
+}
+.offersListItem:nth-child(4n) {
+  margin-right: 0;
+}
+.offersListItemType {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+  width: 72px;
+  padding: 5px 12px 6px 12px;
+  border-radius: 8px;
+  margin: 29px 0 10px 30px;
+}
+.offersListItemPhoto {
+  margin-left: 19px;
+}
+.offersListItemName {
+  border-top: 1px solid #dedddd;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  margin-left: 30px;
+  margin-top: 10px;
+}

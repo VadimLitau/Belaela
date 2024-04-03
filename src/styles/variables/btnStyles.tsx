@@ -9,5 +9,12 @@ const btnStyles = {
   font_weight: 700,
   font_family: "Roboto, sans-serif",
 };
-
-export { btnStyles };
+const btnStyleYellow = {
+  padding: "28px 39px",
+  border_radius: "16px",
+  border: "none",
+  background_color: "#EFD372",
+  margin_top: "23px",
+  font_family: "Roboto, sans-serif",
+};
+export { btnStyles, btnStyleYellow };

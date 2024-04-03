@@ -1,15 +1,8 @@
 import style from "./banner.module.css";
 import { Button } from "../button/button";
+import { btnStyleYellow } from "../../styles/variables/btnStyles";
 
 export function Banner() {
-  const btnStyle = {
-    padding: "28px 39px",
-    border_radius: "16px",
-    border: "none",
-    background_color: "#EFD372",
-    margin_top: "23px",
-    font_family: "Roboto, sans-serif",
-  };
   const handleClick = () => {
     console.log("kurwa!");
   };
@@ -21,7 +14,7 @@ export function Banner() {
         <Button
           text="В КАТАЛОГ"
           arrow={true}
-          styles={btnStyle}
+          styles={btnStyleYellow}
           action={handleClick}
         />
       </div>
