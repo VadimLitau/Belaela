@@ -4,6 +4,9 @@ import listIcon1 from "../img/listIcon1.svg";
 import listIcon2 from "../img/listIcon2.svg";
 import product1 from "../img/products1.png";
 import product2 from "../img/products2.png";
+import galleryBgi1 from "../img/galleryItemBgi1.png";
+import galleryBgi2 from "../img//galleryItemBgi2.jpg";
+import galleryBgi3 from "../img/galleryItemBgi3.jpg";
 
 const navigationData = [
   { list: "О нас" },
@@ -153,6 +156,21 @@ const whoWeAreData = [
     text: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
   },
 ];
+
+const galleryData = [
+  {
+    backgroundImage: `${galleryBgi1}`,
+    btnText: "Натуральные масла",
+  },
+  {
+    backgroundImage: `${galleryBgi2}`,
+    btnText: "НОВИНКИ",
+  },
+  {
+    backgroundImage: `${galleryBgi3}`,
+    btnText: "Полезная мука",
+  },
+];
 export {
   navigationData,
   offerBannersData,
@@ -161,4 +179,5 @@ export {
   reviewsData,
   offersData,
   whoWeAreData,
+  galleryData,
 };
