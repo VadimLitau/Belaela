@@ -7,6 +7,8 @@ import product2 from "../img/products2.png";
 import galleryBgi1 from "../img/galleryItemBgi1.png";
 import galleryBgi2 from "../img//galleryItemBgi2.jpg";
 import galleryBgi3 from "../img/galleryItemBgi3.jpg";
+import newsBackgroundImage1 from "../img/newsItemBgi1.png";
+import newsBackgroundImage2 from "../img/newsItemBgi2.png";
 
 const navigationData = [
   { list: "О нас" },
@@ -171,6 +173,24 @@ const galleryData = [
     btnText: "Полезная мука",
   },
 ];
+
+const newsData = [
+  {
+    backgroundImage: `${newsBackgroundImage1}`,
+    date: "25 Авг.",
+    title: "Витаминная заправка для летнего салата",
+    supTitle:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+  },
+  {
+    backgroundImage: `${newsBackgroundImage2}`,
+    date: "25 Окт.",
+    title: "Каих витаминов не хватает осенью?",
+    supTitle:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+  },
+];
+
 export {
   navigationData,
   offerBannersData,
@@ -180,4 +200,5 @@ export {
   offersData,
   whoWeAreData,
   galleryData,
+  newsData,
 };

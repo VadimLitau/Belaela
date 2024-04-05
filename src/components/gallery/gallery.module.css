@@ -11,6 +11,7 @@
   list-style: none;
 }
 .galleryListItem {
+  margin-right: 42px;
 }
 .galleryListBtnWrap {
   width: 612px;
@@ -18,8 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 42px;
 }
-.galleryListBtnWrap:nth-child(3n) {
+.galleryListItem:nth-child(3n) {
   margin-right: 0;
 }

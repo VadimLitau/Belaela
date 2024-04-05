@@ -23,8 +23,8 @@ export function Offers() {
         </div>
         <div className={styles.offersProducts}>
           <ul className={styles.offersList}>
-            {offersData.map((item) => (
-              <li className={`${styles.offersListItem} `}>
+            {offersData.map((item, index) => (
+              <li className={styles.offersListItem} key={index}>
                 <div className={styles.offersListItemType}>{item.type}</div>
                 <img
                   src={item.photo}

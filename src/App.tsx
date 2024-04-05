@@ -9,6 +9,7 @@ import { Reviews } from "./components/reviews/reviews";
 import { Offers } from "./components/offers/offers";
 import { WhoWeAre } from "./components/whoWeAre/whoWeAre";
 import { Gallery } from "./components/gallery/gallery";
+import { News } from "./components/news/news";
 function App() {
   return (
     <div className={styles.wrap}>
@@ -21,6 +22,7 @@ function App() {
       <Offers />
       <WhoWeAre />
       <Gallery />
+      <News />
     </div>
   );
 }

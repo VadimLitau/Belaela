@@ -13,8 +13,8 @@ export function Products() {
       <h2 className={styles.productsTitle}>Категории</h2>
       <p className={styles.productsSubTitle}>Наши продукты</p>
       <ul className={styles.productsList}>
-        {productData.map((item) => (
-          <li className={`${styles.productsListItem} `}>
+        {productData.map((item, index) => (
+          <li className={styles.productsListItem} key={index}>
             <div className={styles.productsListItemType}>{item.type}</div>
             <img
               src={item.photo}

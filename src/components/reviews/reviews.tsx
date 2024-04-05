@@ -54,8 +54,8 @@ export function Reviews() {
         <img className={styles.reviewsCircle} src={circle} alt="" />
       </div>
       <div className={styles.rewievsInfoWrap}>
-        {reviewsData.map((item) => (
-          <div className={styles.rewievsInfo}>
+        {reviewsData.map((item, index) => (
+          <div className={styles.rewievsInfo} key={index}>
             <div className={styles.rewievsInfoCircle}>
               <h2 className={styles.rewievsInfoTitle}>{item.title}</h2>
               <p className={styles.rewievsInfoText}>{item.text}</p>

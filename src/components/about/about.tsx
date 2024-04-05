@@ -22,8 +22,8 @@ export function About() {
           цепочки поставок, обеспечивая надежность и прозрачность.
         </p>
         <ul className={styles.aboutList}>
-          {aboutData.map((item) => (
-            <li className={styles.aboutListItem}>
+          {aboutData.map((item, index) => (
+            <li className={styles.aboutListItem} key={index}>
               <div className={styles.aboutListItemIconWrap}>
                 <img
                   src={item.icon}
