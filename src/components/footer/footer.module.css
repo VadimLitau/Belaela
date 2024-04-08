@@ -1,0 +1,140 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 165px;
+}
+.footerWrap {
+  background-image: url("../../img/footerBgi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1400px;
+  border-radius: 28px;
+}
+
+.footerPromo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 105px 71px;
+}
+.footerPromoForm {
+  display: flex;
+  flex-direction: row;
+}
+.footerPromoTitle {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 59px;
+  width: 454px;
+  color: var(--color-white);
+}
+.footerEmail {
+  background-color: var(--color-white);
+  border: none;
+  margin-right: 12px;
+  width: 349px;
+  height: 80px;
+  border-radius: 16px;
+  padding-left: 5px;
+}
+
+.footerEmail:focus {
+  border: transparent;
+  outline: transparent;
+}
+.footerNav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 118px;
+}
+.footerNavContactTitle,
+.footerNavUtilityTitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+.footerNavContactListItemTitle,
+.footerNavSocialText,
+.footerNavUtilityListItem {
+  font-size: 18px;
+  font-family: var(--font-familyOpenSans);
+}
+.footerNavContact {
+  margin-right: 51px;
+}
+.footerNavContactTitle {
+  margin-bottom: 32px;
+  text-align: right;
+}
+.footerNavContactList {
+  list-style: none;
+  text-align: right;
+}
+.footerNavContactListItem {
+  margin-bottom: 25px;
+}
+.footerNavContactListItemTitle {
+  font-weight: 700;
+  line-height: 30px;
+}
+.footerNavContactListItemSubtitle {
+  font-weight: 400;
+  line-height: 30px;
+}
+.footerNavSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 42px 64px 42px;
+  border-left: 1px solid var(--color-gray);
+  border-right: 1px solid var(--color-gray);
+}
+.footerNavSocialLogo {
+  margin-bottom: 23px;
+}
+.footerNavSocialText {
+  width: 543px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 29px;
+}
+.footerNavSocialList {
+  display: flex;
+  flex-direction: row;
+}
+.footerNavSocialListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-opacity-green);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.footerNavSocialListItem:nth-child(4) {
+  margin-right: 0;
+}
+.footerNavSocialListItemLink {
+}
+.footerNavSocialListItemImage {
+}
+.footerNavUtility {
+  margin-left: 50px;
+}
+.footerNavUtilityTitle {
+  margin-bottom: 24px;
+}
+.footerNavUtilityList {
+  list-style-type: none;
+}
+.footerNavUtilityListItem {
+  margin-bottom: 25px;
+}
+.footerNavUtilityListLink {
+  text-decoration: none;
+  cursor: pointer;
+}

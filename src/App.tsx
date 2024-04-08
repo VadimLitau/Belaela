@@ -10,6 +10,7 @@ import { Offers } from "./components/offers/offers";
 import { WhoWeAre } from "./components/whoWeAre/whoWeAre";
 import { Gallery } from "./components/gallery/gallery";
 import { News } from "./components/news/news";
+import { Footer } from "./components/footer/footer";
 function App() {
   return (
     <div className={styles.wrap}>
@@ -23,6 +24,7 @@ function App() {
       <WhoWeAre />
       <Gallery />
       <News />
+      <Footer />
     </div>
   );
 }

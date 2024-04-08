@@ -9,6 +9,10 @@ import galleryBgi2 from "../img//galleryItemBgi2.jpg";
 import galleryBgi3 from "../img/galleryItemBgi3.jpg";
 import newsBackgroundImage1 from "../img/newsItemBgi1.png";
 import newsBackgroundImage2 from "../img/newsItemBgi2.png";
+import inst from "../img/Insta.svg";
+import facebook from "../img/Fb.svg";
+import twit from "../img/twit.svg";
+import pint from "../img/pint.svg";
 
 const navigationData = [
   { list: "О нас" },
@@ -191,6 +195,35 @@ const newsData = [
   },
 ];
 
+const footerContactsData = [
+  {
+    title: "Email",
+    subtitle: "needhelp@Organia.com",
+  },
+  {
+    title: "Phone",
+    subtitle: "666 888 888",
+  },
+  {
+    title: "Address",
+    subtitle: "88 road, borklyn street, USA   ",
+  },
+];
+
+const utilityPages = [
+  "Style Guide",
+  "404 Not Found",
+  "Password Protected",
+  "Licences",
+  "Changelog",
+];
+
+const socialListData = [
+  { backgroundImage: `${inst}`, altText: "instagram logo" },
+  { backgroundImage: `${facebook}`, altText: "facebook logo" },
+  { backgroundImage: `${twit}`, altText: "twitter logo" },
+  { backgroundImage: `${pint}`, altText: "pinterest logo" },
+];
 export {
   navigationData,
   offerBannersData,
@@ -201,4 +234,7 @@ export {
   whoWeAreData,
   galleryData,
   newsData,
+  footerContactsData,
+  utilityPages,
+  socialListData,
 };

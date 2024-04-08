@@ -19,6 +19,7 @@ export function Button({ text, arrow, styles, action }: IButton) {
         border: `${styles.border}`,
         backgroundColor: `${styles.background_color}`,
         marginTop: `${styles.margin_top}`,
+        cursor: "pointer",
       }}
       onClick={action}
     >
