@@ -1,10 +1,17 @@
 import style from "./banner.module.css";
 import { Button } from "../button/button";
-import { btnStyleYellow } from "../../styles/variables/btnStyles";
 
 export function Banner() {
   const handleClick = () => {
     console.log("kurwa!");
+  };
+  const btnStyleYellow = {
+    padding: "28px 39px",
+    border_radius: "16px",
+    margin_top: "20px",
+    border: "none",
+    background_color: "#EFD372",
+    font_family: "Roboto, sans-serif",
   };
   return (
     <section className={style.main}>

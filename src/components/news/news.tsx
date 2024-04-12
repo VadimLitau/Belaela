@@ -5,11 +5,11 @@ import { newsData } from "../../data/data";
 
 export function News() {
   const btnStyles = {
-    padding: "28px 45px 30px 46px",
+    padding: "25px",
     border_radius: "16px",
     border: "2px solid #274c5b",
     background_color: "#FFFFFF",
-    margin_top: "46px",
+    margin_top: "74px",
     font_size: "20px",
     font_weight: 700,
     font_family: "Roboto, sans-serif",

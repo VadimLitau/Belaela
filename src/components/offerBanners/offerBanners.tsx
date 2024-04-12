@@ -20,10 +20,16 @@ export function OfferBanners({ props }: IOfferBanners) {
             style={{ backgroundImage: `url(${item.img})` }}
           >
             <div className={style.bannerWrap}>
-              <h2 className={style.bannerTitle} style={{ color: "white" }}>
+              <h2
+                className={style.bannerTitle}
+                style={{ color: `${item.colorTitle}` }}
+              >
                 {item.title}
               </h2>
-              <p className={style.bannerText} style={{ color: "white" }}>
+              <p
+                className={style.bannerText}
+                style={{ color: `${item.colorText}` }}
+              >
                 {item.text}
               </p>
             </div>

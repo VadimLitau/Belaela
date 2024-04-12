@@ -13,14 +13,14 @@
   height: 367px;
   border-radius: 30px;
   display: flex;
-  align-items: flex-end;
 }
 
 .banner:nth-child(2n) {
   margin-right: 0;
 }
 .bannerWrap {
-  margin: 0 0 72px 55px;
+  /* margin: 0 0 72px 55px; */
+  margin: 109px 0 0 55px;
   width: 278px;
 }
 
@@ -28,7 +28,8 @@
   font-family: var(--font-familyRosaMarena);
   font-size: 48px;
   line-height: 48px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 
 .bannerText {

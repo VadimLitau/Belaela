@@ -1,7 +1,7 @@
 import styles from "./products.module.css";
 import { productData } from "../../data/data";
 import { Button } from "../button/button";
-import { btnStyles } from "../../styles/variables/btnStyles";
+import { productBtnStyles } from "../../styles/variables/btnStyles";
 
 export function Products() {
   const handleClick = () => {
@@ -29,7 +29,7 @@ export function Products() {
         arrow={true}
         text="Смотреть всё"
         action={handleClick}
-        styles={btnStyles}
+        styles={productBtnStyles}
       />
     </section>
   );

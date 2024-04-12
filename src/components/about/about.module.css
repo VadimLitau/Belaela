@@ -1,6 +1,6 @@
 .aboutWrap {
   margin: 190px 0 176px 0;
-  width: 100vw;
+  width: 100%;
   max-height: 1067px;
   display: flex;
   flex-direction: row;
@@ -18,7 +18,7 @@
   font-weight: 500;
   font-size: 48px;
   line-height: 20px;
-  letter-spacing: 3%;
+  letter-spacing: 2px;
   margin-bottom: 8px;
   color: var(--color-green);
 }
@@ -33,7 +33,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 16px;
+  margin-bottom: 46px;
 }
 .aboutList {
   width: 564px;
@@ -63,7 +63,8 @@
   margin-bottom: 7px;
 }
 .aboutListItemText {
+  font-family: var(--font-familyOpenSans);
   font-weight: 400;
-  font-style: 18px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 29.77px;
 }

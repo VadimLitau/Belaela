@@ -1,5 +1,4 @@
 import style from "./newsItem.module.css";
-import { btnStyleYellow } from "../../styles/variables/btnStyles";
 import { Button } from "../button/button";
 
 interface INewsItem {
@@ -8,7 +7,13 @@ interface INewsItem {
   title: string;
   supTitle: string;
 }
-
+const btnStyleYellow = {
+  padding: "28px 47px",
+  border_radius: "16px",
+  border: "none",
+  background_color: "#EFD372",
+  font_family: "Roboto, sans-serif",
+};
 export function NewsItem({
   backgroundImage,
   date,

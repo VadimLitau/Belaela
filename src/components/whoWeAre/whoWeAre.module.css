@@ -1,6 +1,6 @@
 .whoWeAreWrap {
   background-image: url("../../img/whoWeAreBgi.png");
-  width: 100vw;
+  width: 100%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
@@ -8,10 +8,10 @@
 }
 .whoWeAre {
   background-color: var(--color-white);
-  border-radius: 20px;
-  padding: 80px;
-  width: 780px;
-  margin: 100px 280px 108px 0;
+  border-radius: 33px;
+  padding: 80px 80px 97px 90px;
+  width: 880px;
+  margin: 100px 170px 108px 0;
 }
 .whoWeAreTitle {
   font-family: var(--font-familyRosaMarena);
@@ -19,7 +19,7 @@
   font-weight: 500;
   font-size: 48px;
   line-height: 51px;
-  letter-spacing: 9%;
+  letter-spacing: 4px;
   margin-bottom: 8px;
 }
 .whoWeAreText {

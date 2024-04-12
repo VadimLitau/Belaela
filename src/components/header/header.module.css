@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 69px 0;
+  margin: 69px 0 61px 0;
 }
 
 .contactsWrap {
@@ -28,7 +28,7 @@
   height: 56px;
   background-color: var(--font-main-color);
   border-radius: 28px;
-  margin-left: 12px;
+  margin-left: 15px;
 }
 
 .contactsText {

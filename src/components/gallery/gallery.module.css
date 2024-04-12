@@ -1,6 +1,7 @@
 .galleryWrap {
   background-color: #f1f8f4;
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
 }
 .gallery {
   margin: 187px 0;

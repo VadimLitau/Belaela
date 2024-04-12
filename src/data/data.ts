@@ -36,20 +36,6 @@ const offerBannersData = [
     colorText: "#274C5B",
     text: "Скидка 20% за подписку",
   },
-  {
-    img: `${offerBanner1}`,
-    colorTitle: "#ffffff",
-    title: "Новинки!",
-    colorText: "#ffffff",
-    text: "Свежайшее штирийское масло",
-  },
-  {
-    img: `${offerBanner2}`,
-    colorTitle: "#7EB693",
-    title: "Скидка!",
-    colorText: "#274C5B",
-    text: "Скидка 20% за подписку",
-  },
 ];
 
 const aboutData = [
@@ -169,11 +155,11 @@ const galleryData = [
     btnText: "Натуральные масла",
   },
   {
-    backgroundImage: `${galleryBgi2}`,
+    backgroundImage: `${galleryBgi3}`,
     btnText: "НОВИНКИ",
   },
   {
-    backgroundImage: `${galleryBgi3}`,
+    backgroundImage: `${galleryBgi2}`,
     btnText: "Полезная мука",
   },
 ];

@@ -12,7 +12,7 @@
   color: var(--color-green);
   font-size: 48px;
   line-height: 20px;
-  letter-spacing: 3%;
+  letter-spacing: 2px;
   margin-bottom: 8px;
 }
 .productsSubTitle {
@@ -45,10 +45,9 @@
 .productsListItemType {
   background-color: var(--color-yellow);
   color: var(--color-white);
-  width: 72px;
   padding: 5px 12px 6px 12px;
   border-radius: 8px;
-  margin: 29px 0 10px 30px;
+  margin: 15px 0 10px 30px;
 }
 .productsListItemPhoto {
   margin-left: 19px;
@@ -59,5 +58,5 @@
   font-size: 20px;
   line-height: 23px;
   margin-left: 30px;
-  margin-top: 10px;
+  margin-top: 15px;
 }

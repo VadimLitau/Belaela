@@ -1,12 +1,17 @@
 .listItem {
-  display: inline;
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: var(--font-main-color);
-  padding-right: 20px;
 }
-
+.list {
+  width: 519px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40px 0 22px;
+}
 .listItemUppercase {
   text-transform: uppercase;
 }
