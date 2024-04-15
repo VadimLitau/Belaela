@@ -2,6 +2,7 @@ import { Button } from "../button/button";
 import styles from "./offers.module.css";
 import { btnStyleYellowOffer } from "../../styles/variables/btnStyles";
 import { offersData } from "../../data/data";
+import { Product } from "../product/product";
 
 export function Offers() {
   const handleClick = () => {
@@ -24,13 +25,7 @@ export function Offers() {
         <ul className={styles.offersList}>
           {offersData.map((item, index) => (
             <li className={styles.offersListItem} key={index}>
-              <div className={styles.offersListItemType}>{item.type}</div>
-              <img
-                src={item.photo}
-                alt={item.name}
-                className={styles.offersListItemPhoto}
-              />
-              <p className={styles.offersListItemName}>{item.name}</p>
+              <Product name={item.name} photo={item.photo} type={item.type} />
             </li>
           ))}
         </ul>

@@ -1,0 +1,20 @@
+.productType {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+  width: 72px;
+  padding: 5px 12px 6px 12px;
+  border-radius: 8px;
+  margin: 18px 0 10px 30px;
+}
+.productPhoto {
+  margin-left: 19px;
+}
+.productName {
+  border-top: 1px solid #dedddd;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  margin-left: 30px;
+  padding-top: 12px;
+  margin-top: 6px;
+}

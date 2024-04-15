@@ -2,6 +2,7 @@ import styles from "./products.module.css";
 import { productData } from "../../data/data";
 import { Button } from "../button/button";
 import { productBtnStyles } from "../../styles/variables/btnStyles";
+import { Product } from "../product/product";
 
 export function Products() {
   const handleClick = () => {
@@ -15,13 +16,7 @@ export function Products() {
       <ul className={styles.productsList}>
         {productData.map((item, index) => (
           <li className={styles.productsListItem} key={index}>
-            <div className={styles.productsListItemType}>{item.type}</div>
-            <img
-              src={item.photo}
-              alt={item.name}
-              className={styles.productsListItemPhoto}
-            />
-            <p className={styles.productsListItemName}>{item.name}</p>
+            <Product name={item.name} photo={item.photo} type={item.type} />
           </li>
         ))}
       </ul>

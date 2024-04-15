@@ -2,6 +2,7 @@ import { PageBanner } from "../../components/pageBanner/pageBanner";
 import style from "./shopPage.module.css";
 import bannerBgi from "../../img/catalogBannerBgi.png";
 import { shopData } from "../../data/data";
+import { Product } from "../../components/product/product";
 
 export function ShopPage() {
   return (
@@ -15,13 +16,7 @@ export function ShopPage() {
         <ul className={style.offersList}>
           {shopData.map((item, index) => (
             <li className={style.offersListItem} key={index}>
-              <div className={style.offersListItemType}>{item.type}</div>
-              <img
-                src={item.photo}
-                alt={item.name}
-                className={style.offersListItemPhoto}
-              />
-              <p className={style.offersListItemName}>{item.name}</p>
+              <Product name={item.name} photo={item.photo} type={item.type} />
             </li>
           ))}
         </ul>
