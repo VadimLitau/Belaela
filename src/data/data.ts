@@ -15,10 +15,10 @@ import twit from "../img/twit.svg";
 import pint from "../img/pint.svg";
 
 const navigationData = [
-  { list: "О нас" },
-  { list: "Каталог", uppercase: true },
-  { list: "Диллерам" },
-  { list: "Новости" },
+  { list: "О нас", to: "/about" },
+  { list: "Каталог", to: "/shop", uppercase: true },
+  { list: "Диллерам", to: "/blog" },
+  { list: "Новости", to: "/#" },
 ];
 
 const offerBannersData = [

@@ -1,8 +1,10 @@
 import styles from "./navigation.module.css";
 import downArrow from "../../img/navArrowDown.jpg";
+import { Link } from "react-router-dom";
 
 interface IDataItem {
   list: string;
+  to: string;
   uppercase?: boolean | undefined;
 }
 interface INavigationData {
@@ -23,7 +25,7 @@ export const Navigation: React.FC<INavigationData> = ({
                 item.uppercase ? styles.listItemUppercase : ""
               }`}
             >
-              <a href="#" className={styles.listItemLink}>
+              <Link to={item.to} className={styles.listItemLink}>
                 {item.list}
                 {item.list === "Каталог" ? (
                   <img
@@ -38,7 +40,7 @@ export const Navigation: React.FC<INavigationData> = ({
                 ) : (
                   ""
                 )}
-              </a>
+              </Link>
             </li>
           );
         })}

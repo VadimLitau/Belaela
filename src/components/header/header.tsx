@@ -3,6 +3,7 @@ import { Navigation } from "../navigation/navigation";
 import { Seacrh } from "../search/search";
 import styles from "./header.module.css";
 import belaelaLogo from "../../img/BelaelaLogo.svg";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -14,9 +15,9 @@ export function Header() {
           <Seacrh />
           <div className={styles.contactsWrap}>
             <div className={styles.contactsCircle} />
-            <a href="#" className={styles.contactsText}>
+            <Link to="/contact" className={styles.contactsText}>
               Контакты
-            </a>
+            </Link>
           </div>
         </div>
       </div>

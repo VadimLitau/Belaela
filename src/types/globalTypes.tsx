@@ -9,3 +9,8 @@ export interface IButtonStyles {
   font_weight?: number;
   font_family?: string;
 }
+
+export interface IPageBanner {
+  backgroundImage: string;
+  text: string;
+}
