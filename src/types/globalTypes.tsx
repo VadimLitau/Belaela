@@ -13,4 +13,5 @@ export interface IButtonStyles {
 export interface IPageBanner {
   backgroundImage: string;
   text: string;
+  marginLeft: string;
 }

@@ -30,7 +30,7 @@ export function AboutPage() {
   };
   return (
     <section className={style.aboutPage}>
-      <PageBanner backgroundImage={bgi} text="О нас" />
+      <PageBanner backgroundImage={bgi} text="О нас" marginLeft="-112px" />
       <div className={style.about}>
         <img src={aboutImage} alt="about img" className={style.aboutImg} />
         <div className={style.aboutWrap}>

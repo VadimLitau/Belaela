@@ -134,6 +134,68 @@ const offersData = [
     name: "Масло Конопляное, 250мл ",
   },
 ];
+const shopData = [
+  {
+    type: "Масла",
+    photo: `${product1}`,
+    name: "Масло тыквенное, 250мл",
+  },
+  {
+    type: "Мука",
+    photo: `${product1}`,
+    name: "Масло кунжутное, 250мл ",
+  },
+  {
+    type: "Каши",
+    photo: `${product1}`,
+    name: "Масло грецкого ореха, 250 мл",
+  },
+  {
+    type: "Масла",
+    photo: `${product1}`,
+    name: "Масло Конопляное, 250мл ",
+  },
+  {
+    type: "Масла",
+    photo: `${product2}`,
+    name: "Масло тыквенное, 250мл",
+  },
+  {
+    type: "Мука",
+    photo: `${product2}`,
+    name: "Масло кунжутное, 250мл ",
+  },
+  {
+    type: "Каши",
+    photo: `${product2}`,
+    name: "Масло грецкого ореха, 250 мл",
+  },
+  {
+    type: "Масла",
+    photo: `${product2}`,
+    name: "Масло Конопляное, 250мл ",
+  },
+  {
+    type: "Масла",
+    photo: `${product1}`,
+    name: "Масло тыквенное, 250мл",
+  },
+  {
+    type: "Мука",
+    photo: `${product1}`,
+    name: "Масло кунжутное, 250мл ",
+  },
+  {
+    type: "Каши",
+    photo: `${product1}`,
+    name: "Масло грецкого ореха, 250 мл",
+  },
+  {
+    type: "Масла",
+    photo: `${product1}`,
+    name: "Масло Конопляное, 250мл ",
+  },
+];
 const whoWeAreData = [
   {
     title: "Современное сельское хозяйство",
@@ -223,4 +285,5 @@ export {
   footerContactsData,
   utilityPages,
   socialListData,
+  shopData,
 };
