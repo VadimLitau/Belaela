@@ -7,23 +7,22 @@ import { BlogPage } from "../../pages/blogPage/blogPage";
 import { BlogSinglePage } from "../../pages/blogSinglePage/blogSinglePage";
 import { ContactPage } from "../../pages/contactPage/contactPage";
 import { NotFoundPage } from "../../pages/notFoundPage/notFoundPage";
-import { Header } from "../header/header";
-import { Footer } from "../footer/footer";
+import { Layout } from "../layout/layout";
 function App() {
   return (
     <>
-      <Header />
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/shop" element={<ShopPage />} />
-        <Route path="/shop-single" element={<ShopSinglePage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog-single" element={<BlogSinglePage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/notFoundPage" element={<NotFoundPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<MainPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="shop" element={<ShopPage />} />
+          <Route path="shop-single" element={<ShopSinglePage />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="blog-single" element={<BlogSinglePage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="notFoundPage" element={<NotFoundPage />} />
+        </Route>
       </Routes>
-      <Footer />
     </>
   );
 }
