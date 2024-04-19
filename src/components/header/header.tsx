@@ -9,7 +9,13 @@ export function Header() {
   return (
     <section className={styles.header}>
       <div className={styles.wrap}>
-        <img src={belaelaLogo} alt="Belaela логотип" />
+        <Link to="/">
+          <img
+            src={belaelaLogo}
+            alt="Belaela логотип"
+            className={styles.imgLogo}
+          />
+        </Link>
         <Navigation navData={navigationData} />
         <div className={styles.searchWrap}>
           <Seacrh />

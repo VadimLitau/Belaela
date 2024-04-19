@@ -29,6 +29,7 @@
   background-color: var(--font-main-color);
   border-radius: 28px;
   margin-left: 15px;
+  transition: transform 0.2s;
 }
 
 .contactsText {
@@ -37,9 +38,21 @@
   font-weight: 600;
   margin-left: 8px;
   text-decoration: none;
+  transition: transform 0.2s;
 }
-
+.contactsWrap:hover .contactsCircle {
+  transform: translateX(-8px);
+}
+.contactsText:hover {
+  color: var(--color-green);
+}
 .searchWrap {
   display: flex;
   flex-direction: row;
+}
+.imgLogo {
+  transition: transform 0.2s;
+}
+.imgLogo:hover {
+  transform: scale(1.1);
 }

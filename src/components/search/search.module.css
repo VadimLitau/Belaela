@@ -29,3 +29,9 @@
   cursor: pointer;
   margin-left: 5px;
 }
+.wrapImg {
+  transition: transform ease 0.2s;
+}
+.wrapImg:hover {
+  transform: rotate(90deg);
+}

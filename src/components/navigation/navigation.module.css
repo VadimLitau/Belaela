@@ -19,3 +19,7 @@
 .listItemLink {
   text-decoration: none;
 }
+
+.listItemLink:hover {
+  color: var(--color-green);
+}

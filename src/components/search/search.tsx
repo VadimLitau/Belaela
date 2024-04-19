@@ -23,7 +23,7 @@ export const Seacrh = () => {
             console.log("button pressed");
           }}
         >
-          <img src={searchBtn} alt="Кнопка поиска" />
+          <img src={searchBtn} alt="Кнопка поиска" className={styles.wrapImg} />
         </button>
       </div>
     </label>
