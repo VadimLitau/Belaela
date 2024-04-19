@@ -1,0 +1,17 @@
+.blogPage {
+  margin-bottom: 240px;
+}
+.blogList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 120px;
+}
+.blogListItem {
+  margin-bottom: 65px;
+}
+.blogListItem:nth-child(2n + 1) {
+  margin-right: 46px;
+}

@@ -9,6 +9,10 @@ import galleryBgi2 from "../img//galleryItemBgi2.jpg";
 import galleryBgi3 from "../img/galleryItemBgi3.jpg";
 import newsBackgroundImage1 from "../img/newsItemBgi1.png";
 import newsBackgroundImage2 from "../img/newsItemBgi2.png";
+import newsBackgroundImage3 from "../img/newsItemBgi3.png";
+import newsBackgroundImage4 from "../img/newsItemBgi4.png";
+import newsBackgroundImage5 from "../img/newsItemBgi5.png";
+import newsBackgroundImage6 from "../img/newsItemBgi6.png";
 import inst from "../img/Insta.svg";
 import facebook from "../img/Fb.svg";
 import twit from "../img/twit.svg";
@@ -272,6 +276,51 @@ const socialListData = [
   { backgroundImage: `${twit}`, altText: "twitter logo" },
   { backgroundImage: `${pint}`, altText: "pinterest logo" },
 ];
+
+const blogData = [
+  {
+    backgroundImage: `${newsBackgroundImage1}`,
+    date: "25 Авг.",
+    title: "Витаминная заправка для летнего салата",
+    supTitle:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+  },
+  {
+    backgroundImage: `${newsBackgroundImage2}`,
+    date: "25 Окт.",
+    title: "Каих витаминов не хватает осенью?",
+    supTitle:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+  },
+  {
+    backgroundImage: `${newsBackgroundImage3}`,
+    date: "25 Авг.",
+    title: "Benefits of Vitamin C & How to Get It",
+    supTitle:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+  },
+  {
+    backgroundImage: `${newsBackgroundImage4}`,
+    date: "25 Окт.",
+    title: "Research More Organic Foods",
+    supTitle:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+  },
+  {
+    backgroundImage: `${newsBackgroundImage5}`,
+    date: "25 Авг.",
+    title: "Everyday Fresh Fruites",
+    supTitle:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+  },
+  {
+    backgroundImage: `${newsBackgroundImage6}`,
+    date: "25 Окт.",
+    title: "Don’t Use Plastic Product! it’s Kill Nature",
+    supTitle:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+  },
+];
 export {
   navigationData,
   offerBannersData,
@@ -286,4 +335,5 @@ export {
   utilityPages,
   socialListData,
   shopData,
+  blogData,
 };
