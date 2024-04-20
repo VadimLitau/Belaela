@@ -321,6 +321,16 @@ const blogData = [
       "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
   },
 ];
+
+const urlData = [
+  "/",
+  "/about",
+  "/shop",
+  "/blog",
+  "/shop-single",
+  "/blog-single",
+  "/contact",
+];
 export {
   navigationData,
   offerBannersData,
@@ -336,4 +346,5 @@ export {
   socialListData,
   shopData,
   blogData,
+  urlData,
 };

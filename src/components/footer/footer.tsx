@@ -6,9 +6,13 @@ import {
   footerContactsData,
   utilityPages,
   socialListData,
+  urlData,
 } from "../../data/data";
+import { useLocation } from "react-router-dom";
 
 export function Footer() {
+  const location = useLocation();
+
   const [values, setValue] = useForm();
   const btnStyles = {
     padding: "28px 48px",
@@ -23,33 +27,40 @@ export function Footer() {
   const handleButton = () => {
     console.log("click NewsItem");
   };
+  const getLocation = (loc: string): boolean => {
+    return urlData.includes(loc);
+  };
   return (
     <section className={style.footer}>
-      <div className={style.footerWrap}>
-        <div className={style.footerPromo}>
-          <h2 className={style.footerPromoTitle}>
-            Узнайте первыми о новых акциях!
-          </h2>
-          <label htmlFor="footerEmail">
-            <div className={style.footerPromoForm}>
-              <input
-                id="footerEmail"
-                type="text"
-                name="footerEmail"
-                className={style.footerEmail}
-                value={values.footerEmail || ""}
-                onChange={setValue}
-                placeholder="Введите ваш e-mail адресс"
-              />
-              <Button
-                action={handleButton}
-                text="Подписаться"
-                styles={btnStyles}
-              />
-            </div>
-          </label>
+      {getLocation(location.pathname) ? (
+        <div className={style.footerWrap}>
+          <div className={style.footerPromo}>
+            <h2 className={style.footerPromoTitle}>
+              Узнайте первыми о новых акциях!
+            </h2>
+            <label htmlFor="footerEmail">
+              <div className={style.footerPromoForm}>
+                <input
+                  id="footerEmail"
+                  type="text"
+                  name="footerEmail"
+                  className={style.footerEmail}
+                  value={values.footerEmail || ""}
+                  onChange={setValue}
+                  placeholder="Введите ваш e-mail адресс"
+                />
+                <Button
+                  action={handleButton}
+                  text="Подписаться"
+                  styles={btnStyles}
+                />
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
+      ) : (
+        ""
+      )}
       <div className={style.footerNav}>
         <nav className={style.footerNavContact}>
           <h3 className={style.footerNavContactTitle}>Contact Us</h3>
