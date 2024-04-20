@@ -1,0 +1,33 @@
+.notFoundPage {
+  background-image: url(../../img/notFoundPageBanner.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+}
+.notFoundPageWrap {
+  padding: 141px 266px 244px 0;
+}
+.notFoundPageTitle {
+  color: #8fa8a8;
+  font-size: 300px;
+  font-weight: 900;
+}
+.notFoundPageSupTitle {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 56.25px;
+  margin-top: -59px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.notFoundPageText {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26.46px;
+  margin-left: 23px;
+  letter-spacing: 0.6px;
+  margin-bottom: -11px;
+}
+.notFoundPageBtnWrap {
+  margin-left: -6px;
+}

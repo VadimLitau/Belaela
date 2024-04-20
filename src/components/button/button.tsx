@@ -22,6 +22,7 @@ export function Button({ text, arrow, styles, action }: IButton) {
         cursor: "pointer",
       }}
       onClick={action}
+      type="button"
     >
       <span
         style={{

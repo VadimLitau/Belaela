@@ -20,7 +20,7 @@ function App() {
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog-single" element={<BlogSinglePage />} />
           <Route path="contact" element={<ContactPage />} />
-          <Route path="notFoundPage" element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </>
