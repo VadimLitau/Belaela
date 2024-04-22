@@ -1,0 +1,139 @@
+.shopSinglePage {
+}
+.productWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -44px;
+  margin-top: 146px;
+}
+
+.imgProduct {
+  display: flex;
+  flex-direction: column;
+  margin-right: 88px;
+}
+.imgProductWrap {
+  display: flex;
+  background-color: var(--color-opacity-grey);
+  padding: 30px 62px 0 74px;
+  border-radius: 30px;
+  position: relative;
+}
+.imgProductPhoto {
+  width: 450px;
+  height: 535px;
+}
+.imgProductTypeWrap {
+  position: absolute;
+  top: 46px;
+  left: 35px;
+  background-color: var(--color-yellow);
+  border-radius: 8px;
+  padding: 5px 12px 6px 12px;
+}
+.imgProductType {
+  color: var(--color-white);
+  font-family: var(--font-familyOpenSans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20.43px;
+}
+.galleryProductList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 19px;
+}
+.galleryProductItem {
+  border-radius: 30px;
+  background-color: var(--color-opacity-grey);
+  padding: 6px 17px 4px 16px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.galleryProductItem:last-child {
+  margin-right: 0px;
+}
+.galleryProductItemImg {
+  width: 107px;
+  height: 132px;
+}
+.infoProduct {
+  width: 658px;
+}
+.infoProductTitle {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 46.88px;
+  margin-bottom: 27px;
+}
+.infoProductText {
+  font-family: var(--font-familyOpenSans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+  margin-bottom: 27px;
+}
+.infoProductText:last-child {
+  margin-bottom: 63px;
+}
+.infoProductBnts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 65px;
+}
+.infoProductBntWb {
+  padding: 28px 54px;
+  background-color: #c01f93;
+  margin-right: 20px;
+}
+.infoProductBntWbLink {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+}
+.infoProductBntOzon {
+  padding: 28px 79px;
+  background-color: #2714ff;
+  border-radius: 16px;
+}
+.infoProductBntOzonLink {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+}
+.simularProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: -26px;
+}
+.simularProductsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.simularProductsTitle {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 58.59px;
+  margin-bottom: 40px;
+}
+.simularProductsListItem {
+  width: 335px;
+  height: 483px;
+  background-color: var(--color-opacity-grey);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-bottom: 21px;
+}
