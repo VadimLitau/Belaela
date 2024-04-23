@@ -1,0 +1,93 @@
+.headerSinglePageInfoWrap {
+  background-image: url(../../img/blogSinglePageBgi.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 245px;
+}
+.headerSinglePageInfo {
+  background-color: var(--color-white);
+  border-radius: 30px;
+  padding: 76px 0 76px 82px;
+  width: 1400px;
+  position: relative;
+  margin-top: 726px;
+  margin-bottom: -165px;
+}
+.headerSinglePageInfoDate {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  margin-bottom: 20px;
+}
+.headerSinglePageInfoDateBold {
+  font-weight: 600;
+}
+.headerSinglePageName {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 82.03px;
+  margin-bottom: 20px;
+}
+.headerSinglePageText {
+  font-family: var(--font-familyOpenSans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+  width: 726px;
+}
+.headerSinglePageBody {
+  margin: 0 auto;
+  width: 936px;
+}
+.headerSinglePageBodyText,
+.headerSinglePageBodyListItem,
+.headerSinglePageBodyListItemSecond {
+  font-family: var(--font-familyOpenSans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+  color: var(--color-dark-gray);
+}
+.headerSinglePageBodyTitle {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 58.59px;
+  margin: 22px 0 24px 0;
+}
+.headerSinglePageBodyList {
+  margin: 30px 0 0 25px;
+}
+.headerSinglePageBodyListItem {
+  margin-bottom: 21px;
+}
+.headerSinglePageBodyListItem:last-child {
+  margin-bottom: 0px;
+}
+.headerSinglePageBodyWrap {
+  text-align: center;
+  border-radius: 30px;
+  padding: 69px 59px;
+  background-color: #f1edea;
+  margin: 50px 0;
+}
+.headerSinglePageBodyWrappedText {
+  font-family: var(--font-familyOpenSans);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 33.08px;
+}
+.headerSinglePageBodyFooterTitle {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 41.02px;
+  margin-bottom: 24px;
+}
+.headerSinglePageBodyListSecond {
+  margin: 30px 0 0 24px;
+}
+.headerSinglePageBodyListItemSecond {
+  margin-bottom: 21px;
+}
