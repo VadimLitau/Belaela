@@ -1,0 +1,208 @@
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactPageSocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 208px;
+}
+.contactPageSocialImg {
+  margin-top: 5px;
+  border-radius: 20px;
+  margin-right: 75px;
+  height: 640px;
+  width: 623px;
+}
+.contactPageSocialWrap {
+  width: 702px;
+}
+.contactPageSocialTitle {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 58.59px;
+  margin-bottom: 14px;
+}
+.contactPageSocialText {
+  font-family: var(--font-familyOpenSans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+  margin-bottom: 34px;
+}
+
+.contactPageSocialBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #eeeeee;
+  width: 352px;
+  border-radius: 16px;
+  margin-bottom: 17px;
+}
+
+.contactPageSocialBtnWrap {
+}
+.contactPageSocialBtnImgWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+  background-color: #f4f4f4;
+  width: 89px;
+  height: 89px;
+  margin: 11px 19px 13px 12px;
+}
+.contactPageSocialBtnImg {
+}
+.contactPageSocialBtnTitle {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 29.3px;
+}
+.contactPageSocialBtnSupTitle {
+  font-family: var(--font-familyOpenSans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+}
+
+.footerNavSocialList {
+  display: flex;
+  flex-direction: row;
+  margin-top: 34px;
+}
+.footerNavSocialListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-opacity-green);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.footerNavSocialListItem:nth-child(4) {
+  margin-right: 0;
+}
+.whereAreWeWrap {
+  width: 1400px;
+  border-radius: 30px;
+  background-image: url(../../img/contactsWhereWeBgi.png);
+  background-repeat: no-repeat;
+  margin-top: 83px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 122px 108px 213px 0;
+}
+.whereAreWe {
+  width: 514px;
+  padding: 46px 53px 50px 53px;
+  background-color: var(--color-white);
+  border-radius: 30px;
+}
+.whereAreWeTitle {
+  font-family: var(--font-familyRosaMarena);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  margin-bottom: 19px;
+  color: var(--color-green);
+}
+.whereAreWeSupTitle {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 58.59px;
+  margin-bottom: 10px;
+}
+.whereAreWeText {
+  font-family: var(--font-familyOpenSans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+  margin-bottom: 15px;
+}
+.whereAreWeAdressList {
+  list-style: none;
+}
+.whereAreWeListItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.whereAreWeListItem:first-child {
+  margin-bottom: 19px;
+}
+.whereAreWeListItemWrap {
+  margin-left: 6px;
+  padding-top: 3px;
+}
+.whereAreWeListItemTitle {
+  font-family: var(--font-familyOpenSans);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29.77px;
+}
+.whereAreWeListItemSupTitle {
+  font-family: var(--font-familyOpenSans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.77px;
+}
+.contanctPageFormWrap {
+  width: 1184px;
+  margin-top: 80px;
+  margin-bottom: 37px;
+}
+.contanctPageForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.formInputWrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.formInputWrap:last-child {
+  margin-bottom: 0;
+}
+.formInputWrap:nth-child(1),
+.formInputWrap:nth-child(3) {
+  margin-right: 46px;
+}
+.contanctPageFormLabel {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.09px;
+  margin-bottom: 25px;
+}
+.contanctPageFormInput,
+.contanctPageFormTextArea {
+  border: 1px solid #7eb693;
+  border-radius: 16px;
+  width: 569px;
+  padding: 28px 0 29px 23px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+}
+
+.contanctPageFormTextArea {
+  resize: none;
+  width: 1184px;
+  height: 247px;
+}
+.contanctPageFormInput::placeholder,
+.contanctPageFormTextArea::placeholder {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21.09px;
+  color: #ababab;
+}
