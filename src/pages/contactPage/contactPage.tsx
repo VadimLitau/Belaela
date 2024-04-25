@@ -7,11 +7,34 @@ import phone from "../../img/contactPhone.svg";
 import { socialListData } from "../../data/data";
 import locationIcon from "../../img/locationIcon.png";
 import { Button } from "../../components/button/button";
+import { SubmitErrorHandler, SubmitHandler, useForm } from "react-hook-form";
+
+interface MyForm {
+  name: string;
+  email: string;
+  company: string;
+  theme: string;
+  message: string;
+}
 
 export function ContactPage() {
-  const handleClick = () => {
-    console.log("kurwa!");
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<MyForm>({ defaultValues: {} });
+
+  const submit: SubmitHandler<MyForm> = (data) => {
+    console.log(data);
   };
+  const error: SubmitErrorHandler<MyForm> = (data) => {
+    console.log(data);
+  };
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const EMAIL_REGEXP =
+    /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+  // const EMAIL_REGEXP = /^(?=.{1,20}$)(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
   const btnStyles = {
     padding: "28px 60px",
     border_radius: "16px",
@@ -123,7 +146,11 @@ export function ContactPage() {
         </div>
       </div>
       <div className={style.contanctPageFormWrap}>
-        <form action="" className={style.contanctPageForm}>
+        <form
+          action=""
+          className={style.contanctPageForm}
+          onSubmit={handleSubmit(submit, error)}
+        >
           <div className={style.formInputWrap}>
             <label htmlFor="name" className={style.contanctPageFormLabel}>
               Как вас зовут?*
@@ -133,7 +160,7 @@ export function ContactPage() {
               id="name"
               className={style.contanctPageFormInput}
               placeholder="Ирина, Денис, Елена"
-              required
+              {...register("name", { required: true, maxLength: 20 })}
             />
           </div>
           <div className={style.formInputWrap}>
@@ -143,9 +170,17 @@ export function ContactPage() {
             <input
               type="text"
               id="email"
-              className={style.contanctPageFormInput}
+              className={
+                !errors.email
+                  ? `${style.contanctPageFormInput}`
+                  : `${style.contanctPageFormInputError}`
+              }
               placeholder="example@yourmail.com"
-              required
+              {...register("email", {
+                pattern: EMAIL_REGEXP,
+                required: true,
+                maxLength: 20,
+              })}
             />
           </div>
           <div className={style.formInputWrap}>
@@ -157,6 +192,9 @@ export function ContactPage() {
               id="company"
               className={style.contanctPageFormInput}
               placeholder="Название вашей компании"
+              {...register("company", {
+                maxLength: 20,
+              })}
             />
           </div>
           <div className={style.formInputWrap}>
@@ -168,7 +206,7 @@ export function ContactPage() {
               id="theme"
               className={style.contanctPageFormInput}
               placeholder="Напишите ваше предложение или вопрос"
-              required
+              {...register("theme", { required: true, maxLength: 20 })}
             />
           </div>
           <div className={style.formInputWrap}>
@@ -179,11 +217,11 @@ export function ContactPage() {
               id="message"
               className={style.contanctPageFormTextArea}
               placeholder="Не забудьте поздороваться :)"
-              required
+              {...register("message", { required: true, min: 18, max: 99 })}
             />
           </div>
+          <Button text="Отправить" styles={btnStyles} type="submit" />
         </form>
-        <Button text="Отправить" styles={btnStyles} action={handleClick} />
       </div>
     </section>
   );

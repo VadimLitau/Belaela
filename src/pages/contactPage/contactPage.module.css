@@ -192,12 +192,30 @@
   font-weight: 400;
   line-height: 21.09px;
 }
-
+.contanctPageFormInput:focus,
+.contanctPageFormTextArea:focus {
+  outline: 1px solid #7eb693;
+}
+.contanctPageFormInputError,
+.contanctPageFormTextAreaError {
+  border: 1px solid red;
+  border-radius: 16px;
+  width: 569px;
+  padding: 28px 0 29px 23px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+}
+.contanctPageFormInputError:focus,
+.contanctPageFormTextAreaError:focus {
+  outline: 1px solid red;
+}
 .contanctPageFormTextArea {
   resize: none;
   width: 1184px;
   height: 247px;
 }
+
 .contanctPageFormInput::placeholder,
 .contanctPageFormTextArea::placeholder {
   font-size: 18px;

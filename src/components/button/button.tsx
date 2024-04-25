@@ -6,10 +6,17 @@ interface IButton {
   text: string;
   arrow?: boolean;
   styles: IButtonStyles;
-  action: () => void;
+  type?: "button" | "submit" | "reset" | undefined;
+  action?: () => void;
 }
 
-export function Button({ text, arrow, styles, action }: IButton) {
+export function Button({
+  text,
+  arrow,
+  styles,
+  action,
+  type = "button",
+}: IButton) {
   return (
     <button
       className={style.btn}
@@ -22,7 +29,7 @@ export function Button({ text, arrow, styles, action }: IButton) {
         cursor: "pointer",
       }}
       onClick={action}
-      type="button"
+      type={type}
     >
       <span
         style={{
