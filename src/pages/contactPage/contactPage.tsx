@@ -31,7 +31,6 @@ export function ContactPage() {
     console.log(data);
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const EMAIL_REGEXP =
     /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
   // const EMAIL_REGEXP = /^(?=.{1,20}$)(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
@@ -158,10 +157,19 @@ export function ContactPage() {
             <input
               type="text"
               id="name"
-              className={style.contanctPageFormInput}
+              className={
+                !errors.name
+                  ? `${style.contanctPageFormInput}`
+                  : `${style.contanctPageFormInputError}`
+              }
               placeholder="Ирина, Денис, Елена"
               {...register("name", { required: true, maxLength: 20 })}
             />
+            {errors.name && (
+              <p className={style.inputErrorMessage}>
+                Пожалуйста представьтесь
+              </p>
+            )}
           </div>
           <div className={style.formInputWrap}>
             <label htmlFor="email" className={style.contanctPageFormLabel}>
@@ -182,6 +190,11 @@ export function ContactPage() {
                 maxLength: 20,
               })}
             />
+            {errors.email && (
+              <p className={style.inputErrorMessage}>
+                Пожалуйста введите вашу почту
+              </p>
+            )}
           </div>
           <div className={style.formInputWrap}>
             <label htmlFor="company" className={style.contanctPageFormLabel}>
@@ -192,9 +205,7 @@ export function ContactPage() {
               id="company"
               className={style.contanctPageFormInput}
               placeholder="Название вашей компании"
-              {...register("company", {
-                maxLength: 20,
-              })}
+              {...register("company")}
             />
           </div>
           <div className={style.formInputWrap}>
@@ -204,10 +215,19 @@ export function ContactPage() {
             <input
               type="text"
               id="theme"
-              className={style.contanctPageFormInput}
+              className={
+                !errors.theme
+                  ? `${style.contanctPageFormInput}`
+                  : `${style.contanctPageFormInputError}`
+              }
               placeholder="Напишите ваше предложение или вопрос"
               {...register("theme", { required: true, maxLength: 20 })}
             />
+            {errors.theme && (
+              <p className={style.inputErrorMessage}>
+                Пожалуйста введите тему обращения
+              </p>
+            )}
           </div>
           <div className={style.formInputWrap}>
             <label htmlFor="message" className={style.contanctPageFormLabel}>
@@ -215,10 +235,21 @@ export function ContactPage() {
             </label>
             <textarea
               id="message"
-              className={style.contanctPageFormTextArea}
+              className={
+                !errors.message
+                  ? `${style.contanctPageFormTextArea}`
+                  : `${style.contanctPageFormTextAreaError}`
+              }
               placeholder="Не забудьте поздороваться :)"
-              {...register("message", { required: true, min: 18, max: 99 })}
+              {...register("message", { required: true })}
             />
+            {errors.message && (
+              <p
+                className={`${style.inputErrorMessage} ${style.inputErrorMessageTextArea}`}
+              >
+                Пожалуйста введите сообщение
+              </p>
+            )}
           </div>
           <Button text="Отправить" styles={btnStyles} type="submit" />
         </form>

@@ -168,6 +168,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  position: relative;
 }
 .formInputWrap:last-child {
   margin-bottom: 0;
@@ -215,6 +216,12 @@
   width: 1184px;
   height: 247px;
 }
+.contanctPageFormTextAreaError {
+  outline: 1px solid red;
+  resize: none;
+  width: 1184px;
+  height: 247px;
+}
 
 .contanctPageFormInput::placeholder,
 .contanctPageFormTextArea::placeholder {
@@ -223,4 +230,15 @@
   font-weight: 400;
   line-height: 21.09px;
   color: #ababab;
+}
+
+.inputErrorMessage {
+  position: absolute;
+  top: 135px;
+  left: 5px;
+  color: #bd0202;
+  font-family: var(--font-familyOpenSans);
+}
+.inputErrorMessageTextArea {
+  top: 305px;
 }
