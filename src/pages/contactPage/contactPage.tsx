@@ -8,6 +8,7 @@ import { socialListData } from "../../data/data";
 import locationIcon from "../../img/locationIcon.png";
 import { Button } from "../../components/button/button";
 import { SubmitErrorHandler, SubmitHandler, useForm } from "react-hook-form";
+import { SocialIcons } from "../../components/socialIcons/socialIcons";
 
 interface MyForm {
   name: string;
@@ -33,7 +34,7 @@ export function ContactPage() {
 
   const EMAIL_REGEXP =
     /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
-  // const EMAIL_REGEXP = /^(?=.{1,20}$)(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
   const btnStyles = {
     padding: "28px 60px",
     border_radius: "16px",
@@ -44,6 +45,7 @@ export function ContactPage() {
     font_weight: 700,
     font_family: "Roboto, sans-serif",
   };
+
   return (
     <section className={style.contactPage}>
       <PageBanner backgroundImage={bgi} text="Контакты" marginLeft="0" />
@@ -92,19 +94,7 @@ export function ContactPage() {
               </p>
             </div>
           </div>
-          <ul className={style.footerNavSocialList}>
-            {socialListData.map((item, index) => (
-              <li className={style.footerNavSocialListItem} key={index}>
-                <a href="#" className={style.footerNavSocialListItemLink}>
-                  <img
-                    src={item.backgroundImage}
-                    alt={item.altText}
-                    className={style.footerNavSocialListItemImage}
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
+          <SocialIcons socialListData={socialListData} />
         </div>
       </div>
       <div className={style.whereAreWeWrap}>

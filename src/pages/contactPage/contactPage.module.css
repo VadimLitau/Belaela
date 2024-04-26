@@ -40,11 +40,9 @@
   border: 1px solid #eeeeee;
   width: 352px;
   border-radius: 16px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
-.contactPageSocialBtnWrap {
-}
 .contactPageSocialBtnImgWrap {
   display: flex;
   justify-content: center;
@@ -69,24 +67,6 @@
   line-height: 29.77px;
 }
 
-.footerNavSocialList {
-  display: flex;
-  flex-direction: row;
-  margin-top: 34px;
-}
-.footerNavSocialListItem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-opacity-green);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-.footerNavSocialListItem:nth-child(4) {
-  margin-right: 0;
-}
 .whereAreWeWrap {
   width: 1400px;
   border-radius: 30px;

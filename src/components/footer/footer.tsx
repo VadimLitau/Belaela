@@ -9,6 +9,7 @@ import {
   urlData,
 } from "../../data/data";
 import { useLocation } from "react-router-dom";
+import { SocialIcons } from "../socialIcons/socialIcons";
 
 export function Footer() {
   const location = useLocation();
@@ -87,19 +88,7 @@ export function Footer() {
             Следите за новостями и акциями
             <br /> в наших социальных сетях, подпишитесь!
           </p>
-          <ul className={style.footerNavSocialList}>
-            {socialListData.map((item, index) => (
-              <li className={style.footerNavSocialListItem} key={index}>
-                <a href="#" className={style.footerNavSocialListItemLink}>
-                  <img
-                    src={item.backgroundImage}
-                    alt={item.altText}
-                    className={style.footerNavSocialListItemImage}
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
+          <SocialIcons socialListData={socialListData} />
         </div>
         <nav className={style.footerNavUtility}>
           <h3 className={style.footerNavUtilityTitle}>Utility Pages</h3>
