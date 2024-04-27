@@ -1,9 +1,11 @@
+import { useStore } from "../../store/store";
 import { Button } from "../button/button";
 import { NewsItem } from "../newsItem/newsItem";
 import style from "./news.module.css";
-import { newsData } from "../../data/data";
 
 export function News() {
+  const { newsData: data } = useStore();
+
   const btnStyles = {
     padding: "25px",
     border_radius: "16px",
@@ -36,7 +38,7 @@ export function News() {
         </div>
       </div>
       <ul className={style.newsList}>
-        {newsData.map((item, index) => (
+        {data.map((item, index) => (
           <li className={style.newsListItem} key={index}>
             <NewsItem
               backgroundImage={item.backgroundImage}

@@ -1,11 +1,14 @@
 import style from "./shopSinglePage.module.css";
-import { offersData, shopData } from "../../data/data";
 import bgi from "../../img/shopSinglePageBannerBgi.png";
 import { PageBanner } from "../../components/pageBanner/pageBanner";
 import { Product } from "../../components/product/product";
 import { useState } from "react";
+import { useStore } from "../../store/store";
+import { useProductStore } from "../../store/productStore";
 
 export function ShopSinglePage() {
+  const { offersData: data } = useStore();
+  const { shopData: shopData } = useProductStore();
   const [imgState, setImgState] = useState(shopData[0].photo);
   return (
     <section className={style.shopSinglePage}>
@@ -74,7 +77,7 @@ export function ShopSinglePage() {
       <div className={style.simularProducts}>
         <h3 className={style.simularProductsTitle}>Похожие продукты</h3>
         <ul className={style.simularProductsList}>
-          {offersData.map((item, index) => (
+          {data.map((item, index) => (
             <li className={style.simularProductsListItem} key={index}>
               <Product name={item.name} photo={item.photo} type={item.type} />
             </li>

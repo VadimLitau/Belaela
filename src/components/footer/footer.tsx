@@ -2,16 +2,14 @@ import useForm from "../../hooks/useForm";
 import { Button } from "../button/button";
 import style from "./footer.module.css";
 import logo from "../../img/BelaelaLogo.svg";
-import {
-  footerContactsData,
-  utilityPages,
-  socialListData,
-  urlData,
-} from "../../data/data";
+import { utilityPages, urlData } from "../../data/data";
 import { useLocation } from "react-router-dom";
 import { SocialIcons } from "../socialIcons/socialIcons";
+import { useStore } from "../../store/store";
 
 export function Footer() {
+  const { footerContactsData: data, socialListData: socialListData } =
+    useStore();
   const location = useLocation();
 
   const [values, setValue] = useForm();
@@ -66,7 +64,7 @@ export function Footer() {
         <nav className={style.footerNavContact}>
           <h3 className={style.footerNavContactTitle}>Contact Us</h3>
           <ul className={style.footerNavContactList}>
-            {footerContactsData.map((item, index) => (
+            {data.map((item, index) => (
               <li className={style.footerNavContactListItem} key={index}>
                 <h4 className={style.footerNavContactListItemTitle}>
                   {item.title}

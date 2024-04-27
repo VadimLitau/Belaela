@@ -1,8 +1,9 @@
+import { useStore } from "../../store/store";
 import { Button } from "../button/button";
 import style from "./gallery.module.css";
-import { galleryData } from "../../data/data";
 
 export function Gallery() {
+  const { galleryData: data } = useStore();
   const btnStyles = {
     padding: "34px 83px",
     border_radius: "16px",
@@ -20,7 +21,7 @@ export function Gallery() {
     <section className={style.galleryWrap}>
       <div className={style.gallery}>
         <ul className={style.galleryList}>
-          {galleryData.map((item, index) => (
+          {data.map((item, index) => (
             <li className={style.galleryListItem} key={index}>
               <div
                 className={style.galleryListBtnWrap}

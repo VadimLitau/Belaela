@@ -1,9 +1,11 @@
 import { Button } from "../button/button";
 import styles from "./about.module.css";
-import { aboutData } from "../../data/data";
 import { btnStyles } from "../../styles/variables/btnStyles";
+import { useStore } from "../../store/store";
 
 export function About() {
+  const { aboutData: data } = useStore();
+
   const handleButton = () => {
     console.log("click about");
   };
@@ -22,7 +24,7 @@ export function About() {
           цепочки поставок, обеспечивая надежность и прозрачность.
         </p>
         <ul className={styles.aboutList}>
-          {aboutData.map((item, index) => (
+          {data.map((item, index) => (
             <li className={styles.aboutListItem} key={index}>
               <div className={styles.aboutListItemIconWrap}>
                 <img

@@ -4,11 +4,11 @@ import { PageBanner } from "../../components/pageBanner/pageBanner";
 import socialImg from "../../img/contactsPhoto.jpg";
 import email from "../../img/contactEmail.svg";
 import phone from "../../img/contactPhone.svg";
-import { socialListData } from "../../data/data";
 import locationIcon from "../../img/locationIcon.png";
 import { Button } from "../../components/button/button";
 import { SubmitErrorHandler, SubmitHandler, useForm } from "react-hook-form";
 import { SocialIcons } from "../../components/socialIcons/socialIcons";
+import { useStore } from "../../store/store";
 
 interface MyForm {
   name: string;
@@ -19,6 +19,7 @@ interface MyForm {
 }
 
 export function ContactPage() {
+  const { socialListData: socialListData } = useStore();
   const {
     register,
     handleSubmit,

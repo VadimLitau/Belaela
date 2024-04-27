@@ -3,9 +3,10 @@ import avatar from "../../img/avatar.png";
 import starGold from "../../img/starGold.svg";
 import starGray from "../../img/starGray.svg";
 import circle from "../../img/circle.png";
-import { reviewsData } from "../../data/data";
+import { useStore } from "../../store/store";
 /* здесь будет слайдер*/
 export function Reviews() {
+  const { reviewsData: data } = useStore();
   return (
     <section className={styles.reviewsWrap}>
       <div className={styles.rewievsContent}>
@@ -54,7 +55,7 @@ export function Reviews() {
         <img className={styles.reviewsCircle} src={circle} alt="" />
       </div>
       <div className={styles.rewievsInfoWrap}>
-        {reviewsData.map((item, index) => (
+        {data.map((item, index) => (
           <div className={styles.rewievsInfo} key={index}>
             <div className={styles.rewievsInfoCircle}>
               <h2 className={styles.rewievsInfoTitle}>{item.title}</h2>
