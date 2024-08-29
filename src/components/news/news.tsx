@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { useProduct } from "../../store/store";
 import { Button } from "../button/button";
 import { NewsItem } from "../newsItem/newsItem";
@@ -16,8 +17,12 @@ export function News() {
 		font_weight: 700,
 		font_family: "Roboto, sans-serif",
 	};
+
+	const navigate = useNavigate();
+
 	const handleButton = () => {
-		console.log("click about");
+		navigate("/blog");
+		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 	return (
 		<section className={style.newsWrap}>

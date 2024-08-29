@@ -2,12 +2,15 @@ import { Button } from "../button/button";
 import styles from "./about.module.css";
 import { btnStyles } from "../../styles/variables/btnStyles";
 import { useProduct } from "../../store/store";
+import { useNavigate } from "react-router-dom";
 
 export function About() {
 	const { aboutData: data } = useProduct();
+	const navigate = useNavigate();
 
 	const handleButton = () => {
-		console.log("click about");
+		navigate("/about");
+		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 
 	return (

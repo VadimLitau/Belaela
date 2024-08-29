@@ -12,7 +12,7 @@ export function Footer() {
 		useProduct();
 	const location = useLocation();
 
-	const [values, setValue] = useForm();
+	const [values, setValue, resetField] = useForm();
 	const btnStyles = {
 		padding: "28px 48px",
 		border_radius: "16px",
@@ -24,11 +24,14 @@ export function Footer() {
 		font_family: "Roboto, sans-serif",
 	};
 	const handleButton = () => {
-		console.log("click NewsItem");
+		alert("Спасибо, пока что здесь просто имитация отправки письма =)");
+		resetField("footerEmail");
 	};
 	const getLocation = (loc: string): boolean => {
 		return urlData.includes(loc);
 	};
+
+	console.log(values);
 	return (
 		<section className={style.footer}>
 			{getLocation(location.pathname) ? (

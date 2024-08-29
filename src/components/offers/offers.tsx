@@ -3,11 +3,14 @@ import styles from "./offers.module.css";
 import { btnStyleYellowOffer } from "../../styles/variables/btnStyles";
 import { Product } from "../product/product";
 import { useProduct } from "../../store/store";
+import { useNavigate } from "react-router-dom";
 
 export function Offers() {
 	const { offersData: data } = useProduct();
+	const navigate = useNavigate();
 	const handleClick = () => {
-		console.log("kurwa!");
+		window.scrollTo({ top: 0, behavior: "smooth" });
+		navigate("/shop");
 	};
 	return (
 		<section className={styles.offersWrap}>
