@@ -8,20 +8,20 @@ import { Offers } from "../../components/offers/offers";
 import { WhoWeAre } from "../../components/whoWeAre/whoWeAre";
 import { Gallery } from "../../components/gallery/gallery";
 import { News } from "../../components/news/news";
-import { useStore } from "../../store/store";
+import { useProduct } from "../../store/store";
 export function MainPage() {
-  const { offerBannersData: data } = useStore();
-  return (
-    <div className={styles.wrap}>
-      <Banner />
-      <OfferBanners props={data} />
-      <About />
-      <Products />
-      <Reviews />
-      <Offers />
-      <WhoWeAre />
-      <Gallery />
-      <News />
-    </div>
-  );
+	const { offerBannersData: data } = useProduct();
+	return (
+		<div className={styles.wrap}>
+			<Banner />
+			<OfferBanners props={data} />
+			<About />
+			<Products />
+			<Reviews />
+			<Offers />
+			<WhoWeAre />
+			<Gallery />
+			<News />
+		</div>
+	);
 }
