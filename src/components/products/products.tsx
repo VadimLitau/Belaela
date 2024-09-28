@@ -10,7 +10,6 @@ export function Products() {
 	const navigate = useNavigate();
 	const handleClick = () => {
 		navigate("/shop");
-		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 
 	return (

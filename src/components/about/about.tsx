@@ -10,7 +10,6 @@ export function About() {
 
 	const handleButton = () => {
 		navigate("/about");
-		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 
 	return (

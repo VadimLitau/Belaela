@@ -22,7 +22,6 @@ export function News() {
 
 	const handleButton = () => {
 		navigate("/blog");
-		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 	return (
 		<section className={style.newsWrap}>

@@ -19,7 +19,7 @@ export function ShopSinglePage() {
 				const response = await fetch(
 					"https://belaela-backend.vercel.app/api/products/"
 				);
-				console.log(response);
+				// console.log(response);
 				if (!response.ok) {
 					throw new Error(`Error: ${response.status}`);
 				}
@@ -34,7 +34,7 @@ export function ShopSinglePage() {
 
 		fetchData();
 	}, []);
-	console.log(state);
+	// console.log(state);
 	return (
 		state.photoMin && (
 			<section className={style.shopSinglePage}>

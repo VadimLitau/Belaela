@@ -31,7 +31,7 @@ export function Footer() {
 		return urlData.includes(loc);
 	};
 
-	console.log(values);
+	// console.log(values);
 	return (
 		<section className={style.footer}>
 			{getLocation(location.pathname) ? (

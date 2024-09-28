@@ -9,7 +9,6 @@ export function Offers() {
 	const { offersData: data } = useProduct();
 	const navigate = useNavigate();
 	const handleClick = () => {
-		window.scrollTo({ top: 0, behavior: "smooth" });
 		navigate("/shop");
 	};
 	return (
