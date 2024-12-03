@@ -6,7 +6,7 @@
 
 [Макет](https://www.figma.com/design/Cjr39YBsqDbCg6IcCIqlCF/Belalea?node-id=0-1&t=WpbZuiAiLUWYHbKn-0)
 
-[Демо]([https://belaela.vercel.app/)
+[Демо](https://belaela.vercel.app/)
 
 ## Реализовано:
 
